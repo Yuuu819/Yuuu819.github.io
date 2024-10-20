@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* 淺色背景 */
+    background-color: #d6e4f0; /* 深一点的背景色 */
     color: #343a40;
 }
 
@@ -23,24 +23,28 @@ h1 {
 
 .menu-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* 置中按钮 */
+    gap: 20px; /* 按钮间距 */
     margin-bottom: 30px;
 }
 
 .menu-buttons button {
-    background-color: #5cb85c; /* 綠色 */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 20px 30px; /* 增加内边距 */
-    font-size: 18px; /* 增加字体大小 */
+    background-color: white; /* 按钮背景色为白色 */
+    color: black; /* 字体颜色为黑色 */
+    border: 2px solid #343a40; /* 黑色边框 */
+    border-radius: 50%; /* 圆形按钮 */
+    padding: 20px; /* 内边距 */
+    font-size: 18px; /* 字体大小 */
+    font-weight: bold; /* 粗体字 */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    width: 80px; /* 按钮宽度 */
+    height: 80px; /* 按钮高度 */
 }
 
 .menu-buttons button:hover {
-    background-color: #4cae4c; /* 懸停效果變暗 */
-    transform: scale(1.05);
+    background-color: #f0f0f0; /* 悬停效果变为浅灰色 */
+    transform: scale(1.1); /* 悬停时稍微放大 */
 }
 
 footer {
@@ -49,4 +53,5 @@ footer {
     font-size: 0.9em;
     color: #666;
 }
+
 
