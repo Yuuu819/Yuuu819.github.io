@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f0f4f8; /* 淺色背景 */
     color: #343a40;
 }
 
@@ -28,18 +28,18 @@ h1 {
 }
 
 .menu-buttons button {
-    background-color: #d9534f;
+    background-color: #5cb85c; /* 綠色 */
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 15px 25px;
-    font-size: 16px;
+    border-radius: 8px;
+    padding: 20px 30px; /* 增加内边距 */
+    font-size: 18px; /* 增加字体大小 */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .menu-buttons button:hover {
-    background-color: #c9302c;
+    background-color: #4cae4c; /* 懸停效果變暗 */
     transform: scale(1.05);
 }
 
@@ -49,5 +49,4 @@ footer {
     font-size: 0.9em;
     color: #666;
 }
-
 
