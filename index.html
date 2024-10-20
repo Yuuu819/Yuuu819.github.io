@@ -23,6 +23,22 @@
             <p><strong>信箱：</strong> umm412570387@m365.fju.edu.tw</p>
         </section>
 
+         <section class="contact-form">
+            <h2>發送訊息</h2>
+            <form action="send_email.php" method="POST">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">電子郵件：</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">訊息：</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">發送</button>
+            </form>
+        </section>
+        
         <footer>
             <p>歡迎您的光臨，如有任何需求，請隨時告知我們的服務員！</p>
         </footer>
