@@ -8,7 +8,7 @@
 <body>
     <h1>發送電子郵件</h1>
 
-    <form method="post" action="">
+    <form method="post" action="success.php">
         <label for="to">收件人:</label>
         <input type="email" name="to" id="to" required><br><br>
         <label for="subject">主題:</label>
@@ -17,22 +17,5 @@
         <textarea name="message" id="message" required></textarea><br><br>
         <button type="submit">發送</button>
     </form>
-
-    <?php
-    // 检查是否有 POST 请求
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // 獲取表單數據
-        $to = $_POST['to'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
-
-        // 發送電子郵件（這裡可以使用 mail()、PHPMailer 或其他方法）
-        // mail($to, $subject, $message);  // Uncomment this line to actually send an email
-    }
-
-    // 始终显示“发件成功”消息
-    echo "<p>發送成功</p>";
-    ?>
 </body>
 </html>
-
