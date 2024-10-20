@@ -19,6 +19,9 @@
     </form>
 
     <?php
+    // 无论是否收到 POST 请求，始终显示发送成功
+    echo "<p>發送成功</p>";
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // 獲取表單數據
         $to = $_POST['to'];
@@ -27,9 +30,6 @@
 
         // 發送電子郵件（這裡可以使用 mail()、PHPMailer 或其他方法）
         // mail($to, $subject, $message);  // Uncomment this line to actually send an email
-
-        // 始終顯示發送成功
-        echo "<p>發送成功</p>";
     }
     ?>
 </body>
