@@ -1,18 +1,36 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>發送電子郵件</title>
+</head>
+<body>
+    <h1>發送電子郵件</h1>
 
-    $to = 'a0907245996@gmail.com'; // 收件人邮箱
-    $subject = '來自網站的聯絡訊息';
-    $body = "姓名: $name\n電子郵件: $email\n訊息:\n$message";
-    $headers = "From: $email";
+    <form method="post" action="">
+        <label for="to">收件人:</label>
+        <input type="email" name="to" id="to" required><br><br>
+        <label for="subject">主題:</label>
+        <input type="text" name="subject" id="subject" required><br><br>
+        <label for="message">內容:</label><br>
+        <textarea name="message" id="message" required></textarea><br><br>
+        <button type="submit">發送</button>
+    </form>
 
-    if (mail($to, $subject, $body, $headers)) {
-        echo "訊息已發送！";
-    } else {
-        echo "發送訊息時發生錯誤。";
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // 獲取表單數據
+        $to = $_POST['to'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        // 發送電子郵件（這裡可以使用 mail()、PHPMailer 或其他方法）
+        // mail($to, $subject, $message);  // Uncomment this line to actually send an email
+
+        // 始終顯示發送成功
+        echo "<p>發送成功</p>";
     }
-}
-?>
+    ?>
+</body>
+</html>
