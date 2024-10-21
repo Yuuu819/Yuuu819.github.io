@@ -15,6 +15,18 @@ h1, h2 {
     text-align: center;
 }
 
+.menu-buttons {
+    text-align: center; /* 中心对齐 */
+    margin-bottom: 20px;
+}
+
+.menu-buttons button {
+    margin: 0 10px; /* 按钮间距 */
+    padding: 10px 20px; /* 按钮内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标指针样式 */
+}
+
 .menu-category {
     margin: 20px 0;
 }
