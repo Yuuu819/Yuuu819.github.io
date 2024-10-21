@@ -1,57 +1,55 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* 淺色背景 */
+    color: #333;
     margin: 0;
-    padding: 0;
-    background-color: #d6e4f0; /* 深一点的背景色 */
-    color: #343a40;
+    padding: 20px;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-    color: #d9534f;
-    margin-bottom: 30px;
 }
 
-.menu-buttons {
+.menu-category {
+    margin: 20px 0;
+}
+
+.dish {
     display: flex;
-    justify-content: center; /* 置中按钮 */
-    gap: 20px; /* 按钮间距 */
-    margin-bottom: 30px;
+    align-items: center; /* 垂直居中 */
+    justify-content: flex-start; /* 水平左对齐 */
+    margin: 10px 0;
+    border: 1px solid #ddd; /* 增加边框以分隔菜品 */
+    padding: 10px; /* 增加内边距 */
+    border-radius: 5px; /* 圆角边框 */
+    background-color: #fff; /* 菜品背景颜色 */
 }
 
-.menu-buttons button {
-    background-color: white; /* 按钮背景色为白色 */
-    color: black; /* 字体颜色为黑色 */
-    border: 2px solid #343a40; /* 黑色边框 */
-    border-radius: 50%; /* 圆形按钮 */
-    padding: 20px; /* 内边距 */
-    font-size: 18px; /* 字体大小 */
-    font-weight: bold; /* 粗体字 */
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    width: 80px; /* 按钮宽度 */
-    height: 80px; /* 按钮高度 */
+.dish img {
+    width: 150px; /* 固定图片宽度 */
+    height: 100px; /* 固定图片高度，以保持一致 */
+    object-fit: cover; /* 保持图片的纵横比并裁剪 */
+    margin-right: 20px; /* 图片与文字之间的间距 */
 }
 
-.menu-buttons button:hover {
-    background-color: #f0f0f0; /* 悬停效果变为浅灰色 */
-    transform: scale(1.1); /* 悬停时稍微放大 */
+.dish-info {
+    flex: 1; /* 使文本信息部分自适应 */
+}
+
+.price {
+    font-weight: bold;
+    color: #e74c3c; /* 突出显示价格 */
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
-    font-size: 0.9em;
-    color: #666;
+    font-size: 14px;
 }
 
 
