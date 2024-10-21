@@ -1,40 +1,50 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #d6e4f0; /* 深色背景 */
-    color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #d6e4f0; /* 深一点的背景色 */
+    color: #343a40;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
+    color: #d9534f;
+    margin-bottom: 30px;
 }
 
 .menu-buttons {
-    text-align: center; /* 按钮居中 */
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* 置中按钮 */
+    gap: 20px; /* 按钮间距 */
+    margin-bottom: 30px;
 }
 
 .menu-buttons button {
-    margin: 0 10px; /* 按钮间距 */
-    padding: 15px; /* 按钮内边距 */
-    font-size: 16px; /* 字体大小 */
-    cursor: pointer; /* 鼠标指针样式 */
-    background-color: white; /* 按钮背景色 */
-    color: black; /* 按钮字体颜色 */
-    border: none; /* 去掉边框 */
+    background-color: white; /* 按钮背景色为白色 */
+    color: black; /* 字体颜色为黑色 */
+    border: 2px solid #343a40; /* 黑色边框 */
     border-radius: 50%; /* 圆形按钮 */
+    padding: 20px; /* 内边距 */
+    font-size: 18px; /* 字体大小 */
     font-weight: bold; /* 粗体字 */
-    transition: background-color 0.3s; /* 平滑过渡效果 */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 80px; /* 按钮宽度 */
+    height: 80px; /* 按钮高度 */
 }
 
 .menu-buttons button:hover {
-    background-color: #f0f0f0; /* 悬停效果 */
+    background-color: #f0f0f0; /* 悬停效果变为浅灰色 */
+    transform: scale(1.1); /* 悬停时稍微放大 */
 }
 
 .menu-category {
@@ -49,7 +59,7 @@ h1, h2 {
     border: 1px solid #ddd; /* 增加边框以分隔菜品 */
     padding: 10px; /* 增加内边距 */
     border-radius: 5px; /* 圆角边框 */
-    background-color: #fff; /* 菜品背景颜色 */
+    background-color: #f9f9f9; /* 菜品背景颜色 */
 }
 
 .dish img {
@@ -71,5 +81,6 @@ h1, h2 {
 footer {
     text-align: center;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 0.9em;
+    color: #666;
 }
