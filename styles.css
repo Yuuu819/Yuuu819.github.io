@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* 淺色背景 */
+    background-color: #d6e4f0; /* 深色背景 */
     color: #333;
     margin: 0;
     padding: 20px;
@@ -16,15 +16,25 @@ h1, h2 {
 }
 
 .menu-buttons {
-    text-align: center; /* 中心对齐 */
+    text-align: center; /* 按钮居中 */
     margin-bottom: 20px;
 }
 
 .menu-buttons button {
     margin: 0 10px; /* 按钮间距 */
-    padding: 10px 20px; /* 按钮内边距 */
+    padding: 15px; /* 按钮内边距 */
     font-size: 16px; /* 字体大小 */
     cursor: pointer; /* 鼠标指针样式 */
+    background-color: white; /* 按钮背景色 */
+    color: black; /* 按钮字体颜色 */
+    border: none; /* 去掉边框 */
+    border-radius: 50%; /* 圆形按钮 */
+    font-weight: bold; /* 粗体字 */
+    transition: background-color 0.3s; /* 平滑过渡效果 */
+}
+
+.menu-buttons button:hover {
+    background-color: #f0f0f0; /* 悬停效果 */
 }
 
 .menu-category {
